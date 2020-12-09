@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options:{
         name:`src`,
-        path: `${__dirname}/src/`
+        path: `${__dirname}/content/`
       },
     },
 
@@ -35,20 +35,16 @@ module.exports = {
         protocol: "https",
         hostname: "www.mohamed-albgal.com",
       }
-    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+      //5) portfolio theme:
+      
+    },
+    {
+      resolve: "gatsby-theme-portfolio",
+      options: {
+        contentPath: `${__dirname}/content` // the path to your markdown files
+      }
+    },
 
 
 
