@@ -40,17 +40,16 @@ module.exports = {
       
     },
     {
-      resolve: "gatsby-theme-portfolio",
-      options: {
-        contentPath: `${__dirname}/content` // the path to your markdown files
-      }
-    },
-    {
       resolve: 'gatsby-plugin-postcss',
       options: {
       postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
       },
     },
+    //6) purgecss, for removing unused tw classes
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: { tailwind: true }
+    }
 
 
   ],
