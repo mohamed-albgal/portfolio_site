@@ -45,7 +45,12 @@ module.exports = {
         contentPath: `${__dirname}/content` // the path to your markdown files
       }
     },
-
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+      postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+      },
+    },
 
 
   ],
