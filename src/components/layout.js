@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
         // <div style={{margin:`3rem auto`, maxWidth:650, padding:`0 1rem`}}>
         //     { children }
         // </div>
-        <div className="" id="layout-container">
-        <div className="w-24 " id="logo">
-            <img className="ml-1" src={logo}/>
+        <div className="bg-white absolute shadow-2xl  w-11/12 mx-10" id="layout-container">
+        <div className="w-24" id="logo">
+            <img className="" src={logo}/>
         </div>
                 {children}
         </div>

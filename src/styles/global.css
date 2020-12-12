@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body{
-    padding:2%;
+    padding:2vh;
+    @apply bg-gray-200
 }

@@ -11,6 +11,7 @@ exports.onCreateNode = ( { node, getNode, actions }) => {
             value: slug,
         });
     }
+    !!slug && console.log(slug);
 }
 
 // exports.createPages = async ({ graphql, actions }) => {
