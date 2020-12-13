@@ -10,11 +10,11 @@ const NavBar = () => {
                     <img src={self} className="  rounded-lg object-contain"></img>
                 </div>
                 <div id="name" className="inline-block text-2xl font-extrabold ml-10  uppercase tracking-widest">
-                    <p className="p-8 text-gray-800">Mohamed Albgal</p>
+                    <p className="p-8 text-logo-darkBlue">Mohamed Albgal</p>
                     <div id="tags" className="flex pl-5">
-                    <Link to="/skills" className="px-4 font-medium hover:text-indigo-700  text-indigo-400 text-sm uppercase tracking-widest">Skills</Link>
-                    <a className="px-4 font-medium hover:text-indigo-700  text-indigo-400 text-sm uppercase tracking-widest" href="#">Resume</a>
-                    <a className="px-4 font-medium hover:text-indigo-700  text-indigo-400 text-sm uppercase tracking-widest" href="#">Contact</a>
+                    <Link to="/skills" className="px-4 font-medium hover:text-logo-darkBlue  text-logo-lightIndigo text-sm uppercase tracking-widest">Skills</Link>
+                    <Link to="/projects" className="px-4 font-medium hover:text-logo-darkBlue  text-logo-lightIndigo text-sm uppercase tracking-widest">Projects</Link>
+                    <Link to="/contact" className="px-4 font-medium hover:text-logo-darkBlue  text-logo-lightIndigo text-sm uppercase tracking-widest">Contact</Link>
 
                     </div>
                 </div>

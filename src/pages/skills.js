@@ -7,7 +7,7 @@ export default function Home() {
   return (
       <Layout>
         <Navbar/>
-        <SkillsCards></SkillsCards>
+        <SkillsCards/>
       </Layout>
   )
 }
