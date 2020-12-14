@@ -3,7 +3,7 @@ import self from '../images/self-image.jpg'
 import {Link} from 'gatsby';
 const NavBar = () => {
     return (
-        <header className="-mt-2 container">
+        <header className="mt-4 container">
             
             <div id="head-box" className=" container w-10/12 mx-72 relative">
                 <div id="self_image" className="inline-block rounded-full h-32 w-32">  

@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import React from 'react'
-import Navbar from '../components/Navbar'
 import logo from '../images/logo_malb.svg'
 
 
@@ -11,8 +10,8 @@ const Layout = ({ children }) => {
         // </div>
         <div className="" id="layout-container">
             <Link to="/">
-                <div className="w-28 border-white shadow-lg  border-2 hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
-                    <img className="pt-2" src={logo}/>
+                <div className="w-32 h-32 border-white shadow-lg  border-2 hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
+                    <img className="mt-3 ml-1" src={logo}/>
                 </div>
             </Link>
             <div className="">
