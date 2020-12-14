@@ -1,15 +1,10 @@
 import React from 'react';
 import sample from "../images/bw_self.svg"
 
-export default () => {
+export default (title, description, link, image) => {
     return (
         <div className="py-12">
         <div className="container mx-auto">
-            <div>
-                <h1 className="text-2xl font-black text-gray-900 pb-6 px-6 md:px-12">
-                    MY BLOG
-                </h1>
-            </div>
             <div className="flex flex-wrap px-6">
                 <div className="w-full lg:w-1/2   md:px-4 lg:px-6 py-5">
                     <div className="bg-white hover:shadow-xl">

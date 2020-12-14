@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react'
 import logo from '../images/logo_malb.svg'
+import { resumeURL} from '../../content/home.yaml'
 
 
 const Layout = ({ children }) => {
@@ -15,9 +16,11 @@ const Layout = ({ children }) => {
                 </div>
             </Link>
             <div className="">
-                <button onClick={e=> alert('button clicked')} className=" h-12 border-gray-100 border-2 rounded-2xl shadow-xl  right-28 top-16 absolute hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900 font-bold  bg-indigo-200">
-                    <p className="text-base tracking-wide px-2 py-1">View <span className="text-lg  tracking-wide">Résumé</span></p>
-                </button>
+                <a target="_blank" href={resumeURL}>
+                    <button className=" h-12 border-gray-100 border-2 rounded-2xl shadow-xl  right-28 top-16 absolute hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900 font-bold  bg-indigo-200">
+                        <p className="text-base tracking-wide px-2 py-1">View <span className="text-lg  tracking-wide">Résumé</span></p>
+                    </button>
+                </a>
             </div>
         
                 {children}

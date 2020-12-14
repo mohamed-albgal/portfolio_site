@@ -6,26 +6,6 @@
 
 module.exports = {
   plugins: [
-    
-    //1) typography plugin
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-
-    //2) gatsby source-file-system (already npm added)
-    {
-      resolve: `gatsby-source-filesystem`,
-      options:{
-        name:`src`,
-        path: `${__dirname}/content/`
-      },
-    },
-
-    //3) transformer
-    `gatsby-transformer-remark`,
 
     //4) s3 plugin
     {
@@ -35,9 +15,7 @@ module.exports = {
         protocol: "https",
         hostname: "www.mohamed-albgal.com",
       }
-
       //5) portfolio theme:
-      
     },
     {
       resolve: 'gatsby-plugin-postcss',
