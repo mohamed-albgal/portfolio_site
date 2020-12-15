@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    padding:2vh;
+    padding:2vh 12vh;
 }
 
 .activeNavLink {

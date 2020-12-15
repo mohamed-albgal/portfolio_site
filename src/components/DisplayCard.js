@@ -3,7 +3,7 @@ import sample from "../images/bw_self.svg"
 
 export default ({title, description, link, image,twWidth="w-1/2", twPaddingX="px-5"}) => {
     return (
-        <div className={`sm:${twWidth} ${twPaddingX} shadow-xl hover:shadow-2xl  py-5`}>
+        <div className={`sm:${twWidth} ${twPaddingX}  shadow-xl hover:shadow-2xl  py-5`}>
                 <div className=" rounded-xl">
                     <div className="rounded-md">
                         <img src={sample} className="h-56 w-full rounded-xl  hover:opacity-25"/>
@@ -14,7 +14,7 @@ export default ({title, description, link, image,twWidth="w-1/2", twPaddingX="px
                         <div className="flex flex-wrap pt-8">
                             <div className="2/3">
                                 <div className="text-sm font-medium">
-                                    {   link && <a href="github.com/mohamed-albgal" className="text-blue-700 px-1 ">
+                                    {   link && <a href="https://www.github.com/mohamed-albgal" className="text-blue-700 px-1 ">
                                     VIEW GITHUB REPO &rarr;</a>     }
                                 </div>
                             </div>

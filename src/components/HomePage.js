@@ -1,9 +1,17 @@
 import React from 'react'
 import {title, tagLine, body} from '../../content/home.yaml'
 import Container from "../components/Container"
+import selfImage from "../images/self-image.jpg"
 export default () => {
     return (
-        <Container heading={title} subHpwdeading={tagLine}>
+        <Container heading={title} subHeading={tagLine}>
+            
+                
+                    <div style={{height:'50vh', width:'50vh'}} className="relative overflow-hidden mx-auto">
+                        <img className="h-full w-full object-cover object-center mr-20 rounded-full " src={selfImage} alt="mohamed's grill"/>
+                    </div>
+                
+            
             <div className="text-lg mt-10 text-gray-500">{body}</div>
         </Container>
     )

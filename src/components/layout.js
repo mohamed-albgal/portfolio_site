@@ -12,24 +12,22 @@ const Layout = ({ children }) => {
         //     { children }
         // </div>
         <div>
-            <div className="bg-indigo-50 shadow-lg mb-20 py-3">
+            <div className="bg-indigo-50 shadow-2xl flex justify-between flex-wrap pt-10">
                 <Link className="" to="/">
-                    <div className="w-32 h-32 border-white shadow-lg inline-block  border-2 hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
+                    <div className="w-32 h-32 border-white shadow-lg inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
                         <img className="mt-3 ml-1" src={logo}/>
                     </div>
                 </Link>
-                <div className=" w-1/2 inline-block">
-                    <p className="p-8 text-logo-darkBlue">{name}</p>
-                    <div id="tags" className="flex pl-5">
-                    <Link to="/" activeClassName="activeNavLink" className="px-4 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">about</Link>
-                    {links.split(',').map(link => <Link to={`/${link}`} activeClassName="activeNavLink" className="px-4 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
+                <div className=" inline-block   self-center mt-14 flex-shrink-0">
+                    <p className=" text-logo-darkBlue text-4xl sm:mb-10 font-extrabold text-center  uppercase tracking-widest">{name}</p>
+                    <div id="tags" className="flex">
+                        <Link to="/" activeClassName="activeNavLink" className="px-12 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">about</Link>
+                        {links.split(',').map(link => <Link to={`/${link}`} activeClassName="activeNavLink" className="px-12 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
                     </div>
                 </div>
-                <div className="">
+                <div className="h-12 border-gray-50 border-2 mr-10 rounded-2xl shadow-lg self-center  hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900   bg-indigo-200">
                     <a target="_blank" href={resumeURL}>
-                        <button className=" h-12 border-gray-50 border-2 rounded-2xl shadow-lg  right-28 top-16 absolute hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900 font-bold  bg-indigo-200">
-                            <p className="text-base tracking-wide px-2 py-1">View <span className="text-lg  tracking-wide">Résumé</span></p>
-                        </button>
+                        <button className="font-bold p-2 text-lg  tracking-wide">View Résumé&rarr;</button>
                     </a>
                 </div>
             </div>
