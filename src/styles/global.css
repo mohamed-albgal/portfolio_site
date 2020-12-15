@@ -7,5 +7,6 @@ body{
 }
 
 .activeNavLink {
-    @apply bg-logo-darkBlue
+    @apply border-logo-darkBlue;
+    @apply border-b-4;
 }

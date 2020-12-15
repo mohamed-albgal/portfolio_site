@@ -13,8 +13,8 @@ const NavBar = () => {
                 <div id="name" className="inline-block text-4xl font-extrabold ml-10  uppercase tracking-widest">
                     <p className="p-8 text-logo-darkBlue">{name}</p>
                     <div id="tags" className="flex pl-5">
-                    <Link to="/" className="px-4 font-medium hover:text-logo-darkBlue  text-logo-lightIndigo text-sm uppercase tracking-widest">home</Link>
-                    {links.split(',').map(link => <Link to={`/${link}`} className="px-4 font-medium hover:text-logo-darkBlue  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
+                    <Link to="/" activeClassName="activeNavLink" className="px-4 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">about</Link>
+                    {links.split(',').map(link => <Link to={`/${link}`} activeClassName="activeNavLink" className="px-4 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
                     </div>
                 </div>
             </div>

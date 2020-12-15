@@ -10,7 +10,7 @@ export default () => {
                 {skills.map((skill) => {
                     return <DisplayCard
                         twWidth="w-2/12"
-                        twPaddingX="px-8"
+                        twPaddingX="mx-8"
                         title={skill.item.title} 
                         image={skill.item.image}
                         description={skill.item.description}
