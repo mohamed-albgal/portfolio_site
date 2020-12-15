@@ -15,7 +15,6 @@ module.exports = {
         protocol: "https",
         hostname: "www.mohamed-albgal.com",
       }
-      //5) portfolio theme:
     },
     {
       resolve: 'gatsby-plugin-postcss',

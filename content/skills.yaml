@@ -1,10 +1,49 @@
-section: skills
-title: Here Are All the Skills I know
-description: I know many skills they are and hope to add to this lis
-skill1: Java
-skill2: Swift
-skill3: Aws
-skill4: Docker
-skill5: Spring
-skill6: XCode
-action: Hire me
+---
+heading: Toolbox
+subHeading: Below are the skills I am confident in. Growing this list is my hobby.
+skills:
+  - item: 
+      title: Java
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: React
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: Javasript
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: AWS
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: Swift
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: Kotlin
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: Spring Framework
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: Databases
+      image: "some image"
+      description: 
+          I'm good at this I swear
+  - item: 
+      title: Testing
+      image: "some image"
+      description: 
+          I'm good at this I swear

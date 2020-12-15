@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
+import Skills from "../components/SkillBox"
 
-
-export default function Home() {
+export default () => {
   return (
       <Layout>
         <Navbar/>
-        <div>skills coming</div>
+        <Skills />
       </Layout>
   )
 }

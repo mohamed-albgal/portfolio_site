@@ -5,3 +5,7 @@
 body{
     padding:2vh;
 }
+
+.activeNavLink {
+    @apply bg-logo-darkBlue
+}
