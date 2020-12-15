@@ -1,6 +1,7 @@
 import React from 'react'
 import {heading, subHeading, projects} from '../../content/projects.yaml'
-import DetailCard from './DetailCard'
+import DisplayCard from './DisplayCard'
+import Container from "../components/Container"
 /**
  * 
  * show a grid of the skills I know
@@ -8,19 +9,19 @@ import DetailCard from './DetailCard'
 export default () => {
     console.log(projects)
     return (
-        <div className="h-full bg-gray-600">
+        <Container>
             <div className="text-2xl">{heading}</div>
             <div className="text-xl">{subHeading}</div>
-            <ul>
-                {projects.map((proj, index) => {
-                    return <DetailCard 
-                        title={proj.item[0].title} 
-                        image={proj.item[0].image}
-                        link={proj.item[0].link}
-                        description={proj.item[0].description}
+            <div className="flex  justify-center flex-wrap container pb-10">
+                {projects.map((proj) => {
+                    return <DisplayCard
+                        title={proj.item.title} 
+                        image={proj.item.image}
+                        link={proj.item.link}
+                        description={proj.item.description}
                     />
                 })}
-            </ul>
-        </div>
+            </div>
+        </Container>
     )
 }
