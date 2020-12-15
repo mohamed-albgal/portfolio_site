@@ -5,11 +5,7 @@ import {name, links} from '../../content/nav.yaml'
 const NavBar = () => {
     return (
         <header className="mt-4 container">
-            
-            <div id="head-box" className="container bg-indigo-50 py-3 shadow-md w-10/12 mx-72 relative">
-                <div id="self_image" className="inline-block rounded-full h-32 w-32">  
-                    <img src={self} className="  rounded-lg object-contain"></img>
-                </div>
+            <div id="head-box" className=" bg-indigo-50 py-3 shadow-md w-10/12 relative">
                 <div id="name" className="inline-block text-4xl font-extrabold ml-10  uppercase tracking-widest">
                     <p className="p-8 text-logo-darkBlue">{name}</p>
                     <div id="tags" className="flex pl-5">
