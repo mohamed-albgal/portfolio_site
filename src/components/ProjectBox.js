@@ -10,7 +10,7 @@ export default () => {
                 {projects.map((proj) => {
                     return<div className="sm:w-1/3 px-5  shadow-xl hover:shadow-2xl  py-5"> <DisplayCard
                         title={proj.item.title} 
-                        image={proj.item.image}
+                        image={`./${proj.item.image}`}
                         link={proj.item.link}
                         description={proj.item.description}
                     /></div>
