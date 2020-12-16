@@ -1,47 +1,28 @@
 ---
 heading: Toolbox
-subHeading: Below are the skillsnfident in. Growing this list is my hobby.
+subHeading: Below are the skills I am confident in. Growing this list is my hobby.
 skills:
   - item: 
       title: Java
-      image: "some image"
       description: 
-          
   - item: 
       title: React
-      image: "some image"
       description: 
-          
   - item: 
-      title: Javasript
-      image: "some image"
+      title: Javascript
       description: 
-        
   - item: 
       title: AWS
-      image: "some image"
       description: 
-          
   - item: 
       title: Swift
-      image: "some image"
-      description: 
-          
-  - item: 
-      title: Kotlin
-      image: "some image"
-      description: 
-          
+      description:
   - item: 
       title: Spring Framework
-      image: "some image"
       description: 
-  - item: 
-      title: Databases
-      image: "some image"
-      description: 
-          I'm good at this I swear
-  - item: 
-      title: Testing
-      image: "some image"
-      description: 
+  - item:
+      title: MongoDB
+      description:
+  - item:
+      title: GitHub
+      description:

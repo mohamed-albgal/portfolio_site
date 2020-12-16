@@ -5,7 +5,7 @@ export default ({title, description, link, image,}) => {
     return (
         <div className=" rounded-xl">
             <div className="rounded-md">
-                <img src={sample} className="h-56 w-full rounded-xl  hover:opacity-25"/>
+                <img src={image} className="h-56 w-full rounded-xl  hover:opacity-25"/>
             </div>
             <div className="px-4 py-4 md:px-10">
                 <h1 className="font-bold text-lg">{title}</h1>
