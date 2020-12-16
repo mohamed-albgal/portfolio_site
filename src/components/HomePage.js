@@ -8,11 +8,9 @@ export default () => {
             
                 
                     <div style={{height:'50vh', width:'50vh'}} className="relative  mx-auto">
-                        <img className="h-full w-full object-cover object-center mr-20 rounded-full " src={selfImage} alt="mohamed's grill"/>
+                        <img className="h-full w-full object-cover object-center sm:mr-20 rounded-full " src={selfImage} alt="mohamed's grill"/>
                     </div>
-                
-            
-            <div className="text-lg mt-5 w-10/12 mx-auto text-gray-500">{body}</div>
+            <div className="sm:text-lg mt-5 sm:w-10/12 mx-auto text-gray-800 sm:leading-7 font-thin">{body}</div>
         </Container>
     )
 }

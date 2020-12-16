@@ -8,8 +8,8 @@ projects:
       link: https://github.com/mohamed-albgal/yarc
       description: 
           I volunteered to make this website for the local youth center for the Yemeni community in Oakland CA.
-          The project was made using GatsbyJS, React, GraphQl and styled with TailwindCSS. The main requirements for the 
-          project were cost effectiveness and that it be multi-lingual. The site can be visited at yarcenter.org
+          The project was made using GatsbyJS, React, GraphQl and styled with TailwindCSS. The site needed to be cost effective to maintain and had to have a language toggle to display
+          Arabic content. The site uses NetlifyCMS for adding content.
   - item: 
       title: Object Recognition Tool Frontend
       image: ort_sc

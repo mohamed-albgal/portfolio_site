@@ -9,7 +9,7 @@ export default ({title, description, link, image,}) => {
             </div>
             <div className="px-4 py-4 md:px-10">
                 <h1 className="font-bold text-lg">{title}</h1>
-                <p className="py-4">{description}</p>
+                <p className="py-4 font-thin sm:leading-6">{description}</p>
                 <div className="flex flex-wrap pt-8">
                     <div className="2/3">
                         <div className="text-sm font-medium">
