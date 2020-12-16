@@ -1,6 +1,6 @@
 ---
 heading: Toolbox
-subHeading: Below are the skills I am confident in. Growing this list is my hobby.
+subHeading: Below are the skills I am confident in and get excited to explore even further. This list is not exhaustive and I do hope to add to it!
 skills:
   - item: 
       title: Java
@@ -9,7 +9,7 @@ skills:
       title: React
       description: 
   - item: 
-      title: Javascript
+      title: GitHub
       description: 
   - item: 
       title: AWS
@@ -18,11 +18,35 @@ skills:
       title: Swift
       description:
   - item: 
+      title: Android
+      description:
+  - item: 
       title: Spring Framework
       description: 
+  - item: 
+      title: Thymeleaf Template Engine
+      description: 
+  - item:
+      title: Shell Scripts
+      description:
+  - item:
+      title: Splunk
+      description:
+  - item:
+      title: Javascript
+      description:
+  - item:
+      title: Tailwind CSS
+      description:
+  - item:
+      title: MySQL
+      description:
+  - item:
+      title: FireBase
+      description:
   - item:
       title: MongoDB
       description:
   - item:
-      title: GitHub
+      title: HTML & CSS
       description:

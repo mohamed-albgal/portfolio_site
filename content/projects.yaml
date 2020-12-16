@@ -1,44 +1,35 @@
 ---
 heading: Projects
-subHeading: Projects I have or am working on
+subHeading: Projects that I've worked on alone as well as with a group.  
 projects:
   - item: 
-      title: Project is 1 is a thing
-      image: "some image"
-      link: Project is 1 is a thing
+      title: Yemeni-American Youth Center Website
+      image: yarc_sc
+      link: https://github.com/mohamed-albgal/yarc
       description: 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate
-          earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel
-          distinctio perferendis tempore nemo sequi eos accusantium.
+          I volunteered to make this website for the local youth center for the Yemeni community in Oakland CA.
+          The project was made using GatsbyJS, React, GraphQl and styled with TailwindCSS. The main requirements for the 
+          project were cost effectiveness and that it be multi-lingual. The site can be visited at yarcenter.org
   - item: 
-      title: Project is 1 is a thing
-      image: "some image"
-      link: Project is 1 is a thing
+      title: Object Recognition Tool Frontend
+      image: ort_sc
+      link: https://github.com/mohamed-albgal/s3upload/tree/search_upload_dev/frontend 
       description: 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate
-          earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel
-          distinctio perferendis tempore nemo sequi eos accusantium.
+          I devoloped the frontend for a course project that allows users to authenticate, store and view stored images. Objects 
+          in the images are then recognized using object detection algorithm YOLOV3. The fronend communicated 
+          with a backend server via standard rest api. Images are stored in an S3 bucket according to the user pool
+          offered by AWS Cognito. Stock images are pulled from Unsplash via REST api.
   - item: 
-      title: Project is 1 is a thing
-      image: "some image"
-      link: Project is 1 is a thing
+      title: Buxury Furniture Listing App
+      image: buxury_sc
+      link: https://github.com/mohamed-albgal/buxury
       description: 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate
-          earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel
-          distinctio perferendis tempore nemo sequi eos accusantium.
+          Course project that allows users to create an account to list, sell and browse local furniture listings.
   - item: 
-      title: Project is 1 is a thing
-      image: "some image"
-      link: Project is 1 is a thing
+      title: Spring Pet Clinic Application
+      image: spring_logo
+      link: https://github.com/mohamed-albgal/spring-pet-clinic
       description: 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate
-          earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel
-          distinctio perferendis tempore nemo sequi eos accusantium.
-  - item: 
-      title: Project is 1 is a thing
-      image: "some image"
-      link: Project is 1 is a thing
-      description: 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate
-          earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel
-          distinctio perferendis tempore nemo sequi eos accusantium.
+          Spring learning project that allows the user authentication and managing booking vet appointments for their pets!
+          Uses Maven and the Spring Boot including Spring Security and Spring Data. Server-side rendering is done using the 
+          Thymeleaf templating engine library.
