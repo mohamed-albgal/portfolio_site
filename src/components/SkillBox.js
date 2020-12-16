@@ -7,14 +7,15 @@ export default () => {
     return (
         <Container heading={heading} subHeading={subHeading}>
             <div className="flex  justify-center flex-wrap container pb-10">
+                
                 {skills.map((skill) => {
-                    return <DisplayCard
-                        twWidth="w-2/12"
-                        twPaddingX="mx-8"
+                    return <div className="sm:w-2/12 mx-4  shadow-xl hover:shadow-2xl  py-5">
+                        <DisplayCard
                         title={skill.item.title} 
                         image={skill.item.image}
                         description={skill.item.description}
-                    />
+                        />
+                    </div>
                 })}
             </div>
         </Container>

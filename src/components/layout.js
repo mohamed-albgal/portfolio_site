@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         //     { children }
         // </div>
         <div>
-            <div className="bg-indigo-50 shadow-2xl flex justify-between flex-wrap pt-10">
+            <div className="bg-gray-50 shadow-2xl flex justify-between flex-wrap pt-10">
                 <Link className="" to="/">
                     <div className="w-32 h-32 border-white shadow-lg inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
                         <img className="mt-3 ml-1" src={logo}/>

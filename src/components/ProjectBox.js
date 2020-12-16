@@ -8,13 +8,12 @@ export default () => {
         <Container heading={heading} subHeading={subHeading}>
             <div className="flex  justify-center flex-wrap container pb-10">
                 {projects.map((proj) => {
-                    return <DisplayCard
-                        twWidth="w-1/3"
+                    return<div className="sm:w-1/3 px-5  shadow-xl hover:shadow-2xl  py-5"> <DisplayCard
                         title={proj.item.title} 
                         image={proj.item.image}
                         link={proj.item.link}
                         description={proj.item.description}
-                    />
+                    /></div>
                 })}
             </div>
         </Container>

@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body{
-    padding:2vh 12vh;
+    padding: 2vh;
 }
+
 
 .activeNavLink {
     @apply border-logo-darkBlue;
