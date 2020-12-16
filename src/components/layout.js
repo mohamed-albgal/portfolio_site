@@ -4,32 +4,39 @@ import logo from '../images/logo_malb.svg'
 import { resumeURL} from '../../content/home.yaml'
 import {name, links} from '../../content/nav.yaml'
 
-const fjlds = <div className="inline-block h-10">
-<a href="linkedin.com/mohamed-albgal" target="_blank"></a>
-    <img src="./linkedin_logo" className="object-fit"/>
-<a href="gihub.com/mohamed-albgal" target="_blank">
-    <img src="./github_logo"/>
-</a>
-</div>
+const socialsLinks = <div className="inline-block self-center">
+            <div className="flex justify-items-end">
+                <a className="px-10 pb-4" href="https://linkedin.com/in/mohamed-albgal" target="_blank">
+                    <img className="h-8" src="../linkedin_logo"/>
+                </a>    
+                <a className="mx" href="https://github.com/mohamed-albgal" target="_blank">
+                    <img className="h-8" src="../github_logo"/>
+                </a>
+            </div>
+        </div>
 
 const Layout = ({ children }) => {
     return (
         <div>
-            <div className="bg-gray-50 shadow-2xl flex justify-between flex-wrap pt-10">
+            <div className="bg-gray-50 shadow-2xl flex justify-center flex-wrap pt-10 relative">
                 <Link className="" to="/">
-                    <div className="w-32 h-32 border-white shadow-lg inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
+                    <div className="sm:absolute left-3 top-5 w-32 h-32 border-white shadow-lg inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
                         <img className="mt-3 ml-1" src={logo}/>
                     </div>
                 </Link>
-                <div className=" inline-block   self-center mt-14 flex-shrink-0">
-                    <p className=" text-logo-darkBlue text-4xl sm:mb-10 font-extrabold text-center  uppercase tracking-widest">{name}</p>
+                <div className=" inline-block   self-center mt-14 w-auto ">
+                    <div className="flex-row">
+                        <p className=" text-logo-darkBlue text-4xl sm:mb-10 font-extrabold text-center  uppercase tracking-widest max-w-screen">{name}</p>
+                    </div>
                     
                     <div id="tags" className="flex">
                         <Link to="/" activeClassName="activeNavLink" className="px-12 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">about</Link>
                         {links.split(',').map(link => <Link to={`/${link}`} activeClassName="activeNavLink" className="px-12 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
                     </div>
+                    
                 </div>
-                <div className="h-12 border-gray-50 border-2 mr-10 rounded-2xl shadow-lg self-center  hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900   bg-indigo-200">
+                {socialsLinks}
+                <div className="h-12 border-gray-50 border-2 mr-10 rounded-2xl shadow-lg self-center sm:absolute right-2 bottom-20  hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900   bg-indigo-200">
                     <a target="_blank" href={resumeURL}>
                         <button className="font-bold p-2 text-lg  tracking-wide">View Résumé&rarr;</button>
                     </a>
