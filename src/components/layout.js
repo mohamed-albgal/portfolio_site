@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         <div className="sm:w-auto w-screen">
             <div className="bg-gray-50 shadow-2xl sm:flex sm:flex-row flex-col justify-center flex-wrap pt-10 relative">
                 <Link className="" to="/">
-                    <div className="sm:absolute left-3 top-5 w-32 h-32 border-white shadow-lg inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
+                    <div className="lg:absolute left-3 top-5 w-32 h-32 border-white shadow-lg sm:inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
                         <img className="mt-3 ml-1" src={logo}/>
                     </div>
                 </Link>
@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
                     
                 </div>
                 {socialsLinks}
-                <div className="h-12 border-gray-50 border-2 mr-10 sm:max-w-none max-w-xs text-center rounded-2xl shadow-lg self-center sm:absolute right-2 bottom-20  hover:bg-logo-lightIndigo hover:text-logo-darkBlue text-blue-900   bg-indigo-200">
+                <div className="h-12  mr-10 sm:max-w-none max-w-xs text-center rounded-lg shadow-lg self-center lg:absolute right-2 bottom-20  bg-logo-lightIndigo hover:text-logo-darkBlue text-white   hover:bg-indigo-200">
                     <a target="_blank" href={resumeURL}>
-                        <button className="font-bold p-2 text-lg  tracking-wide">View Résumé&rarr;</button>
+                        <button className="font-bold text-lg sm:text-base py-3 px-4  tracking-wide">View Résumé  &rarr;</button>
                     </a>
                 </div>
             </div>

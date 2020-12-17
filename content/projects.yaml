@@ -34,3 +34,10 @@ projects:
           Spring learning project that allows the user authentication and managing booking vet appointments for their pets!
           Uses Maven and the Spring Boot including Spring Security and Spring Data. Server-side rendering is done using the 
           Thymeleaf templating engine library.
+  - item: 
+      title: Mohamed-Albgal.com
+      image: logo_malb.svg
+      link: https://github.com/mohamed-albgal/portfolio_site
+      description: 
+          This website was designed using TailwindCSS and built using GatsbyJS. Static hosting is done on AWS S3 using CloudFront CDN for faster access. Content is decoupled from
+          the code by storing it in YAML files whose keys become the props for the page components.

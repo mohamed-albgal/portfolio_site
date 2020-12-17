@@ -13,7 +13,7 @@ module.exports = {
       options: {
         bucketName: "mohamed-albgal.com",
         protocol: "https",
-        hostname: "www.mohamed-albgal.com",
+        hostname: "mohamed-albgal.com",
       }
     },
     {
