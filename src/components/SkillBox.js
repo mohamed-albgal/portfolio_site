@@ -5,8 +5,8 @@ import Container from "./Container"
 export default () => {
     const SkillCard = ({title,image,description}) => {
         return (
-            <div className="h-auto">
-                <div className="h-full">
+            <div className="h-full">
+                <div className="h-auto">
                     <img src={image} className=" object-fill mx-auto my-auto">
                     </img>
                 </div>
