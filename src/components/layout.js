@@ -20,7 +20,7 @@ const socialsLinks = <div className="inline-block self-center">
 
 const Layout = ({ children }) => {
     return (
-        <div className="sm:max-w-none max-w-xs">
+        <div className="sm:w-auto w-screen">
             <div className="bg-gray-50 shadow-2xl sm:flex sm:flex-row flex-col justify-center flex-wrap pt-10 relative">
                 <Link className="" to="/">
                     <div className="sm:absolute left-3 top-5 w-32 h-32 border-white shadow-lg inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
