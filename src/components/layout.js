@@ -6,11 +6,14 @@ import {name, links} from '../../content/nav.yaml'
 
 const socialsLinks = <div className="inline-block self-center">
             <div className="sm:p-0 py-10 flex justify-items-end">
-                <a className="sm:px-10 pb-4" href="https://linkedin.com/in/mohamed-albgal" target="_blank">
+                <a className="px-2 pb-4" href="https://linkedin.com/in/mohamed-albgal" target="_blank">
                     <img className="h-8" src="../linkedin_logo"/>
                 </a>    
-                <a className="mx" href="https://github.com/mohamed-albgal" target="_blank">
+                <a className="sm:px-3 px-2 pb-4" href="https://github.com/mohamed-albgal" target="_blank">
                     <img className="h-8" src="../github_logo"/>
+                </a>
+                <a className="px-2" href="mailto:malbgal@gmail.com" target="_blank">
+                    <img className="h-8" src="../email_icon"/>
                 </a>
             </div>
         </div>
@@ -30,8 +33,8 @@ const Layout = ({ children }) => {
                     </div>
                     
                     <div id="tags" className="flex">
-                        <Link to="/" activeClassName="activeNavLink" className="sm:px-12 px-2 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">about</Link>
-                        {links.split(',').map(link => <Link to={`/${link}`} activeClassName="activeNavLink" className="sm:px-12 px-2 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
+                        <Link to="/" activeClassName="activeNavLink" className="sm:px-16 px-2 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">about</Link>
+                        {links.split(',').map(link => <Link to={`/${link}`} activeClassName="activeNavLink" className="sm:px-14 px-2 py-1 font-medium  text-logo-lightIndigo text-sm uppercase tracking-widest">{link}</Link>)}    
                     </div>
                     
                 </div>

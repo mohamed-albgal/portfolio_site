@@ -15,16 +15,17 @@ projects:
       image: ort_sc
       link: https://github.com/mohamed-albgal/s3upload/tree/search_upload_dev/frontend 
       description: 
-          I devoloped the frontend for a course project that allows users to authenticate, store and view stored images. Objects 
-          in the images are then recognized using object detection algorithm YOLOV3. The fronend communicated 
+          I developed the ReactJS frontend for a course project that allows users to authenticate, store and view stored images. Objects 
+          in the images are then recognized using the object detection algorithm YOLOV3. The frontend communicated 
           with a backend server via standard rest api. Images are stored in an S3 bucket according to the user pool
-          offered by AWS Cognito. Stock images are pulled from Unsplash via REST api.
+          offered by AWS Cognito. AWS Amplify was used hooking into AWS services on the client side. Stock images are pulled from Unsplash via REST api.
   - item: 
       title: Buxury Furniture Listing App
       image: buxury_sc
       link: https://github.com/mohamed-albgal/buxury
-      description: 
-          Course project that allows users to create an account to list, sell and browse local furniture listings.
+      description: >
+        iOS app that allows users to list, browse, and buy furntiture to rent or own. The app is developed in Swift using UIKit for 
+        UI elements. Data is stored on Google Cloud Platform's Firebase NoSQL database. Users are able to authenticate also through Firebase auth service.
   - item: 
       title: Spring Pet Clinic Application
       image: spring_sc
