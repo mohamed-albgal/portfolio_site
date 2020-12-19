@@ -21,7 +21,7 @@ const socialsLinks = <div className="inline-block self-center">
 const Layout = ({ children }) => {
     return (
         <div className="sm:w-auto w-screen">
-            <div className="bg-gray-50 shadow-2xl sm:flex sm:flex-row flex-col justify-center flex-wrap pt-10 relative">
+            <div className="bg-white hover:shadow-2xl sm:flex sm:flex-row flex-col justify-center flex-wrap pt-10 z-30 fixed w-screen">
                 <Link className="" to="/">
                     <div className="lg:absolute left-3 top-5 w-32 h-32 border-white shadow-lg sm:inline-block  border-2 self-center hover:bg-indigo-200 ml-4 mt-4 bg-indigo-100 rounded-full " id="logo">
                         <img className="mt-3 ml-1" src={logo}/>
@@ -46,7 +46,9 @@ const Layout = ({ children }) => {
                 </div>
             </div>
         
-                {children}
+                <div className="pt-40 sm:max-w-none max-w-sm">
+                    {children}
+                </div>
         </div>
     );
 }
