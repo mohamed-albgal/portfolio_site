@@ -36,7 +36,7 @@ projects:
           Thymeleaf templating engine library.
   - item: 
       title: Mohamed-Albgal.com
-      image: logo_malb.svg
+      image: alt_logo_malb.svg
       link: https://github.com/mohamed-albgal/portfolio_site
       description: 
           This website was designed using TailwindCSS and built using GatsbyJS. Static hosting is done on AWS S3 using CloudFront CDN for faster access. Content is decoupled from
