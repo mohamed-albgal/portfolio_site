@@ -7,10 +7,9 @@ import { name, links } from '../../content/nav.yaml';
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Your exact original social links structure
   const socialsLinks = (
     <div className="mt-5 inline-block self-center">
-      <div className="sm:p-0 py-10 flex justify-items-end">
+      <div className="sm:p-0 flex justify-items-end">
         <a className="px-2 pb-4" href="https://linkedin.com/in/mohamed-albgal" target="_blank" rel="noreferrer">
           <img className="h-6" src="../linkedin_logo" alt="LinkedIn" />
         </a>
@@ -66,21 +65,19 @@ const Layout = ({ children }) => {
             </p>
           </div>
 
-          {/* Navigation Tags: FIXED */}
-          {/* Removed divide-y and w-full which hijack active link dimensions. Used gap-6 on mobile to keep them spaced out without forcing full-width blocks. */}
           <div id="tags" className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-0 w-full sm:w-auto py-4 sm:py-0">
-            <Link 
-              to="/" 
-              activeClassName="activeNavLink" 
+            <Link
+              to="/"
+              activeClassName="activeNavLink"
               className="sm:px-16 px-2 py-1 font-medium text-logo-lightIndigo text-sm uppercase tracking-widest"
             >
               about
             </Link>
             {links.split(',').map(link => (
-              <Link 
+              <Link
                 key={link}
-                to={`/${link}`} 
-                activeClassName="activeNavLink" 
+                to={`/${link}`}
+                activeClassName="activeNavLink"
                 className="sm:px-14 px-2 py-1 font-medium text-logo-lightIndigo text-sm uppercase tracking-widest"
               >
                 {link}
@@ -97,7 +94,7 @@ const Layout = ({ children }) => {
         {/* Desktop Only Social Links Instance */}
 
         {/* View Résumé Button Wrapper */}
-        <div className={`${isOpen ? 'block' : 'hidden'} sm:block h-12 mt-0 lg:mr-0 sm:mr-10 sm:max-w-none max-w-xs text-center rounded-lg shadow-lg self-center lg:absolute right-2 bottom-28 hover:bg-logo-lightIndigo text-logo-darkBlue hover:text-white bg-indigo-200 lg:my-0 mx-auto sm:mx-0 sm:mb-10`}>
+        <div className={`${isOpen ? 'block' : 'hidden'} sm:block sm:bottom-0 mb-3 sm:h-12 lg:mr-8 sm:mr-10 sm:max-w-none max-w-xs text-center rounded-lg shadow-lg self-center lg:absolute right-2 lg:bottom-28 hover:bg-logo-lightIndigo text-logo-darkBlue hover:text-white bg-indigo-200 lg:my-0 mx-auto sm:mx-0 sm:mb-10`}>
           <a target="_blank" href={resumeURL} rel="noreferrer">
             <button className="font-bold text-lg sm:text-base py-3 px-4 tracking-wide">
               View Résumé &rarr;
